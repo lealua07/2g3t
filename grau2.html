@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equação de Segundo Grau</title>
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <section class="SegundoGrau">
+        <div id="Equação">
+            
+            <select name="sinal_a" id="sinal_a">
+                <option selected value="+">+</option>
+                <option value="-">-</option>
+            </select>
+            <input  class=entrada type="number" id="valor_a">
+            <span>x</span>2</span>
+
+            <select name="sinal_b" id="sinal_b">
+                <option selected value="+">+</option>
+                <option value="-">-</option>
+            </select>
+            <input  class=entrada type="number" id="valor_a">
+            <span>x</span></span>
+
+            <select name="sinal_c" id="sinal_c">
+                <option selected value="+">+</option>
+                <option value="-">-</option>
+            </select>
+            <input   type="number"  onchange="set_valor_c()" id="valor_a">
+            <span></span> = 0</span>
+        
+            
+            
+        </div>
+        <div>
+            Delta: <span id="delta"></span>
+        </div>
+        <div>
+            Resutado: <span id="raiz"></span>
+                        
+        </div>
+    </section>
+</body>
+</html>
