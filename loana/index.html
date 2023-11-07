@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./script/script.js"></script>
-    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="estilo.js"></script>
 </head>
-<body onclick="alo_mundo()">
-    <header class="barra_superior">
-            Barra Superior
-    </header>
-    <section class="conteudo">
-            Conteúdo
-    </section>
-    <footer class="rodape">
-            Propriedade de Fulano e Ciclano.
-    </footer>
+<body onload="atualizar_tela()">
+    Nome: <input type="text" id="nome"><br>
+
+    <button onclick="inserir_ultimo()">Inserir Ultimo</button><br>
+    <button onclick="inserir_primeiro()">Inserir primeiro</button><br>
+    <button onclick="deletar_primeiro()">deleta primeiro</button><br>
+    <button onclick="deletar_ultimo()">deletar ultimo</button><br>
+    <button onclick="limpar_lista()">limpar lista</button><br>
+    <button onclick="ordenar_az()">ordenar az</button><br>
+    <button onclick="ordenar_za()">ordenar za</button><br>
+    <span id="lista"></span>
+
 </body>
-</html>>
+</html>
